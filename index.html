@@ -1,68 +1,192 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipping Information</title>
       <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-      <header class="hero">
-          <nav class="navbar">
-              <div class="logo">MyBrand</div>
-              <ul class="nav-links">
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-              </ul>
-          </nav>
-          <div class="hero-content">
-              <h1>Welcome to Our Landing Page</h1>
-              <p>We build amazing digital experiences that help your business grow.</p>
-              <a href="#contact" class="cta-btn">Get Started</a>
-          </div>
-      </header>
+<body>
 
-      <section id="features" class="features">
-          <h2>Our Features</h2>
-          <div class="features-grid">
-              <div class="feature-card">
-                  <div class="feature-icon">&#9733;</div>
-                  <h3>Fast Performance</h3>
-                  <p>Optimized for speed and efficiency across all devices.</p>
-              </div>
-            <div class="feature-card">
-                  <div class="feature-icon">&#9632;</div>
-                <h3>Modern Design</h3>
-                  <p>Beautiful, clean interfaces that engage your users.</p>
-              </div>
-              <div class="feature-card">
-                  <div class="feature-icon">&#9650;</div>
-                  <h3>Scalable Solutions</h3>
-                  <p>Built to grow with your business needs.</p>
-            </div>
-        </div>
-      </section>
+      <header class="site-header">
+                <div class="header-inner">
+                              <div class="logo">
+                                                <span class="logo-icon">&#128666;</span>span>
+                                                ShipEasy
+                              </div>div>
+                              <p class="header-tagline">Fast &amp; Reliable Delivery to Your Door</p>p>
+                </div>div>
+      </header>header>
 
-      <section id="about" class="about">
-          <h2>About Us</h2>
-          <p>We are a passionate team dedicated to creating outstanding web experiences. Our mission is to help businesses succeed online with cutting-edge technology and thoughtful design.</p>
-    </section>
+      <main class="main-content">
+                <div class="form-container">
+                              <div class="form-header">
+                                                <h1>Shipping Information</h1>
+                                              <p>Please fill in your details below so we can deliver your order accurately and on time.</p>
+                              </div>div>
+                
+                            <form id="shippingForm" class="shipping-form" novalidate>
+                            
+                                            <!-- Personal Information -->
+                                            <div class="form-section">
+                                                                <h2 class="section-title">
+                                                                                        <span class="section-icon">&#128100;</span>span>
+                                                                                        Personal Information
+                                                                </h2>
+                                                                <div class="form-row two-col">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="firstName">First Name <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="firstName" name="firstName" placeholder="e.g. John" required autocomplete="given-name">
+                                                                                                                    <span class="error-msg" id="firstNameError"></span>span>
+                                                                                          </div>div>
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="lastName">Last Name <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="lastName" name="lastName" placeholder="e.g. Doe" required autocomplete="family-name">
+                                                                                                                    <span class="error-msg" id="lastNameError"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="fullName">Full Name <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="fullName" name="fullName" placeholder="e.g. John Michael Doe" required autocomplete="name">
+                                                                                                                    <span class="error-msg" id="fullNameError"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                            </div>div>
+                            
+                                            <!-- Contact Information -->
+                                            <div class="form-section">
+                                                                <h2 class="section-title">
+                                                                                        <span class="section-icon">&#128222;</span>span>
+                                                                                        Contact Information
+                                                                </h2>
+                                                                <div class="form-row">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="email">Email Address <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="email" id="email" name="email" placeholder="e.g. john.doe@email.com" required autocomplete="email">
+                                                                                                                    <span class="error-msg" id="emailError"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row two-col">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="phone">Phone Number <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="tel" id="phone" name="phone" placeholder="e.g. +1 (555) 000-0000" required autocomplete="tel">
+                                                                                                                    <span class="error-msg" id="phoneError"></span>span>
+                                                                                          </div>div>
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="altPhone">Alternate Phone Number</label>label>
+                                                                                                                    <input type="tel" id="altPhone" name="altPhone" placeholder="e.g. +1 (555) 111-1111" autocomplete="tel">
+                                                                                          </div>div>
+                                                                </div>div>
+                                            </div>div>
+                            
+                                            <!-- Shipping Address -->
+                                            <div class="form-section">
+                                                                <h2 class="section-title">
+                                                                                        <span class="section-icon">&#127968;</span>span>
+                                                                                        Shipping Address
+                                                                </h2>
+                                                                <div class="form-row">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="addressLine1">Address Line 1 <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="addressLine1" name="addressLine1" placeholder="House / Building number and street name" required autocomplete="address-line1">
+                                                                                                                    <span class="error-msg" id="addressLine1Error"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="addressLine2">Address Line 2</label>label>
+                                                                                                                    <input type="text" id="addressLine2" name="addressLine2" placeholder="Neighborhood, district, or additional info" autocomplete="address-line2">
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="streetAddress">Street Address <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="streetAddress" name="streetAddress" placeholder="Full street address" required autocomplete="street-address">
+                                                                                                                    <span class="error-msg" id="streetAddressError"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="aptSuite">Apartment / Suite / Unit</label>label>
+                                                                                                                    <input type="text" id="aptSuite" name="aptSuite" placeholder="e.g. Apt 4B, Suite 200, Unit 3" autocomplete="address-line2">
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row two-col">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="city">City <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="city" name="city" placeholder="e.g. New York" required autocomplete="address-level2">
+                                                                                                                    <span class="error-msg" id="cityError"></span>span>
+                                                                                          </div>div>
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="state">State / Region / Province <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="state" name="state" placeholder="e.g. New York" required autocomplete="address-level1">
+                                                                                                                    <span class="error-msg" id="stateError"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                                                <div class="form-row two-col">
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="zipCode">ZIP Code / Postal Code <span class="required">*</span>span></label>label>
+                                                                                                                    <input type="text" id="zipCode" name="zipCode" placeholder="e.g. 10001" required autocomplete="postal-code">
+                                                                                                                    <span class="error-msg" id="zipCodeError"></span>span>
+                                                                                          </div>div>
+                                                                                        <div class="form-group">
+                                                                                                                    <label for="country">Country <span class="required">*</span>span></label>label>
+                                                                                                                    <select id="country" name="country" required autocomplete="country-name">
+                                                                                                                                                    <option value="">-- Select Country --</option>option>
+                                                                                                                                                    <option value="US">United States</option>option>
+                                                                                                                                                    <option value="CA">Canada</option>option>
+                                                                                                                                                    <option value="GB">United Kingdom</option>option>
+                                                                                                                                                    <option value="AU">Australia</option>option>
+                                                                                                                                                    <option value="DE">Germany</option>option>
+                                                                                                                                                    <option value="FR">France</option>option>
+                                                                                                                                                    <option value="JP">Japan</option>option>
+                                                                                                                                                    <option value="CN">China</option>option>
+                                                                                                                                                    <option value="IN">India</option>option>
+                                                                                                                                                    <option value="BR">Brazil</option>option>
+                                                                                                                                                    <option value="MX">Mexico</option>option>
+                                                                                                                                                    <option value="IT">Italy</option>option>
+                                                                                                                                                    <option value="ES">Spain</option>option>
+                                                                                                                                                    <option value="NL">Netherlands</option>option>
+                                                                                                                                                    <option value="SG">Singapore</option>option>
+                                                                                                                                                    <option value="NZ">New Zealand</option>option>
+                                                                                                                                                    <option value="ZA">South Africa</option>option>
+                                                                                                                                                    <option value="KR">South Korea</option>option>
+                                                                                                                                                    <option value="AE">United Arab Emirates</option>option>
+                                                                                                                                                    <option value="PH">Philippines</option>option>
+                                                                                                                                                    <option value="OTHER">Other</option>option>
+                                                                                                                      </select>select>
+                                                                                                                    <span class="error-msg" id="countryError"></span>span>
+                                                                                          </div>div>
+                                                                </div>div>
+                                            </div>div>
+                            
+                                            <div class="form-actions">
+                                                                <button type="reset" class="btn-reset">&#10006; Clear Form</button>button>
+                                                                <button type="submit" class="btn-submit">
+                                                                                        <span class="btn-text">&#128666; Submit Shipping Info</span>span>
+                                                                                        <span class="btn-loading" style="display:none;">&#8987; Submitting...</span>span>
+                                                                </button>button>
+                                            </div>div>
+                            
+                            </form>form>
+                
+                            <!-- Success Message -->
+                            <div class="success-message" id="successMessage" style="display:none;">
+                                            <div class="success-icon">&#10003;</div>div>
+                                            <h2>Shipping Information Received!</h2>
+                                            <p>Thank you! Your shipping details have been submitted successfully. We'll process your order and notify you once it's shipped.</p>
+                                            <button class="btn-new" onclick="resetForm()">Submit Another</button>button>
+                            </div>div>
+                </div>div>
+      </main>main>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-          <form class="contact-form" id="contactForm">
-              <input type="text" placeholder="Your Name" required>
-              <input type="email" placeholder="Your Email" required>
-              <textarea placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit" class="submit-btn">Send Message</button>
-          </form>
-      </section>
-
-      <footer class="footer">
-          <p>&copy; 2026 MyBrand. All rights reserved.</p>
-    </footer>
+    <footer class="site-footer">
+            <p>&copy; 2026 ShipEasy. All rights reserved. | Secure &amp; Fast Shipping Worldwide</p>
+    </footer>footer>
 
     <script src="script.js"></script>
 </body>
-  </html>
+</html>html></p></p></h1>
+</body></title>
+  </head>
